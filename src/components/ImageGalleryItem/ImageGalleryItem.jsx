@@ -1,7 +1,12 @@
-export const ImageGalleryItem = ({ id, previewURL, tags }) => {
+import s from './ImageGalleryItem.module.css';
+
+export const ImageGalleryItem = ({ id, previewURL, tags, url, openModal }) => {
+  const handleClick = () => {
+    openModal(url);
+  };
   return (
-    <li className="gallery-item">
-      <img src={previewURL} alt={tags} />
+    <li className={s.ImageGalleryItem} onClick={handleClick}>
+      <img className={s.ImageGalleryItemImage} src={previewURL} alt={tags} />
     </li>
   );
 };

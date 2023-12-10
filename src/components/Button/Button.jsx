@@ -1,3 +1,9 @@
+import s from './Button.module.css';
+
 export const Button = ({ handleLoadMore }) => {
-  return <button onClick={handleLoadMore}>Load more</button>;
+  return (
+    <button className={s.Button} onClick={handleLoadMore}>
+      Load more
+    </button>
+  );
 };
