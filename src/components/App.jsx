@@ -1,3 +1,6 @@
+// import { Component } from 'react';
+import { ImageGallery } from './ImageGallery/ImageGallery';
+
 export const App = () => {
   return (
     <div
@@ -5,12 +8,13 @@ export const App = () => {
         height: '100vh',
         display: 'flex',
         justifyContent: 'center',
-        alignItems: 'center',
+        // alignItems: 'center',
         fontSize: 40,
-        color: '#010101'
+        color: '#010101',
       }}
     >
-      React homework template
+      {/* React homework template */}
+      <ImageGallery />
     </div>
   );
 };
